@@ -13,3 +13,13 @@ function filterComics(category) {
         }
     });
 }
+
+// Event listener para los botones del filtro
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        const category = button.getAttribute('data-category');
+        filterComics(category);
+    });
+});
