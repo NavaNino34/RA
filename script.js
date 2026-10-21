@@ -1,3 +1,15 @@
 // Seleccion de elementos del DOM para el filtro
 const filterButtons = document.querySelectorAll('.filter-btn');
 const comicCards = document.querySelectorAll('.comic-card');
+
+// Funcion para filtrar productos por categoria
+function filterComics(category) {
+    comicCards.forEach(card => {
+        const cardCategory = card.getAttribute('data-category');
+        if (category === 'all' || cardCategory === category) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
