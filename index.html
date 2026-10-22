@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Cómics</title>
+</head>
+<body>
+
+    <header>
+        <h1>Tienda de Cómics - Catálogo de Cristopher</h1> <!-- Linea que causara el conflicto -->
+    </header>
+
+    <main>
+        <section>
+            <h2>Catálogo de cómics</h2>
+
+            <div class="categorias">
+                <button>Todos</button>
+                <button>Superhéroes</button>
+                <button>Manga</button>
+                <button>Novelas gráficas</button>
+            </div>
+        </section>
+
+        <section id="catalogo">
+            <h2>Productos</h2>
+
+            <div class="productos">
+
+                <article class="producto" data-categoria="superheroes">
+                    <h3>Spider-Man</h3>
+                    <p>Cómic de superhéroes</p>
+                </article>
+
+                <article class="producto" data-categoria="manga">
+                    <h3>Dragon Ball</h3>
+                    <p>Manga de aventuras</p>
+                </article>
+
+                <article class="producto" data-categoria="novelas-graficas">
+                    <h3>Batman: The Killing Joke</h3>
+                    <p>Novela gráfica</p>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
