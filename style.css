@@ -1,60 +1,91 @@
 
-/* Estilos base */
+/* Estilos generales */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 20px;
-  background-color: #f5f0ff;
-  color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f3fa;
+    color: #333;
 }
 
 /* Encabezado */
 header {
-  text-align: center;
-  margin-bottom: 30px;
+    background-color: #6c4ab6;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
 }
 
-/* Botones de filtro */
-.filters {
-  margin-top: 15px;
+/* Contenido principal */
+main {
+    max-width: 1000px;
+    margin: auto;
 }
 
-.filter-btn {
-  background-color: #e2d5f8;
-  color: #333;
-  border: none;
-  padding: 8px 16px;
-  margin: 5px;
-  cursor: pointer;
-  border-radius: 5px;
-  font-weight: bold;
+h2 {
+    color: #6c4ab6;
+    margin-bottom: 15px;
 }
 
-.filter-btn:hover,
-.filter-btn.active {
-  background-color: #8e6bc4;
-  color: white;
+/* Botones de categorías */
+.categorias {
+    margin-bottom: 30px;
 }
 
-/* Catálogo */
-.catalog {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
+.categorias button {
+    background-color: #e5dcf7;
+    color: #493477;
+    border: none;
+    padding: 10px 16px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-/* Tarjetas */
-.card {
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px #ccc;
-  width: 200px;
-  text-align: center;
+.categorias button:hover {
+    background-color: #6c4ab6;
+    color: white;
 }
 
-.card img {
-  max-width: 100%;
-  border-radius: 5px;
+/* Productos */
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
+
+.producto {
+    background-color: white;
+    padding: 20px;
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px #ddd;
+    border-top: 4px solid #9b7ede;
+}
+
+.producto h3 {
+    color: #6c4ab6;
+    margin-top: 0;
+}
+
+.producto p {
+    color: #666;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 600px) {
+    .productos {
+        justify-content: center;
+    }
+
+    .producto {
+        width: 100%;
+    }
+
+    .categorias button {
+        margin: 4px 2px;
+    }
+}
+
