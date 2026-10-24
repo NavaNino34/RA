@@ -1,51 +1,92 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
 
     <title>Tienda de Cómics</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+    <!-- Encabezado de la tienda -->
     <header>
-            <h1>Tienda de Cómics - Catálogo de Miguel Rivera y Cristopher</h1>
+        <h1>Tienda de Cómics - Catálogo de Miguel Rivera y Cristopher</h1>
     </header>
 
     <main>
+
+        <!-- Sección de categorías -->
         <section>
             <h2>Catálogo de cómics</h2>
+
             <div class="categorias">
-                <button>Todos</button>
-                <button>Superhéroes</button>
-                <button>Manga</button>
-                <button>Novelas gráficas</button>
+                <button
+                    class="filter-btn active"
+                    data-category="all">
+                    Todos
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-category="superheroes">
+                    Superhéroes
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-category="manga">
+                    Manga
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-category="novelas-graficas">
+                    Novelas gráficas
+                </button>
             </div>
         </section>
 
+        <!-- Sección de productos -->
         <section id="catalogo">
             <h2>Productos</h2>
 
             <div class="productos">
 
-                <article class="producto" data-categoria="superheroes">
+                <!-- Cómic de superhéroes -->
+                <article
+                    class="producto comic-card"
+                    data-category="superheroes">
                     <h3>Spider-Man</h3>
                     <p>Cómic de superhéroes</p>
                 </article>
 
-                <article class="producto" data-categoria="manga">
+                <!-- Cómic manga -->
+                <article
+                    class="producto comic-card"
+                    data-category="manga">
                     <h3>Dragon Ball</h3>
                     <p>Manga de aventuras</p>
                 </article>
 
-                <article class="producto" data-categoria="novelas-graficas">
+                <!-- Novela gráfica -->
+                <article
+                    class="producto comic-card"
+                    data-category="novelas-graficas">
                     <h3>Batman: The Killing Joke</h3>
                     <p>Novela gráfica</p>
                 </article>
 
             </div>
         </section>
+
     </main>
+
+    <!-- Conexión con el archivo JavaScript -->
+    <script src="script.js"></script>
 
 </body>
 </html>
